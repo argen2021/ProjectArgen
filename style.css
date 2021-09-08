@@ -1,0 +1,75 @@
+*{
+    background-color: rgb(0, 0, 24);
+}
+
+h1{
+    font-family: 'Lato', sans-serif;
+    font:200;
+    color: rgb(177, 93, 174);
+    font-size: 72pt;
+    text-align: center;
+}
+
+p{
+    font-family: 'Courier New', monospace;
+    font-size: 24pt;
+    color: wheat;
+    text-align: center;
+}
+
+a{
+	background-color:transparent;
+	border-radius:42px;
+	border:2px solid #a32ebb;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:20px 31px;
+	text-decoration:none;
+}
+a:hover {
+	background-color:transparent;
+}
+a:active {
+	position:relative;
+	top:1px;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font:200;
+    color: whitesmoke;
+    font-size: 42pt;
+    text-align: center;
+}
+
+div{
+    text-align: center;
+}
+
+form{
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input{  
+        color: whitesmoke;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+textarea{  
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button{
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:transparent;
+}
+
+
+        
