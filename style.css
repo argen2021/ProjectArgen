@@ -1,0 +1,719 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(12, 9, 11);
+    overflow-x: hidden;
+}
+
+.navbar {
+    width: 100%;
+    height: 15vh;
+    border: none;
+    z-index: 3;
+    background: transparent;
+}
+
+.navbar img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 40%;
+    opacity: 0.3;
+}
+
+.navbar .container-fluid {
+    width: 100%;
+    min-height: 100%;
+    display: grid;
+    gap: 0;
+    grid-template-columns: 10% 15% 65% 10%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar .container-fluid .navbar-header {
+    grid-column: 2;
+}
+
+.navbar .container-fluid .navbar-header .navbar-brand {
+    width: 100%;
+    height: 100%;
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.863);
+}
+
+.navbar .container-fluid .navbar-collapse {
+    grid-column: 3;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar .container-fluid .navbar-collapse .navbar-nav {
+    width: 80%;
+}
+
+.navbar .container-fluid .navbar-collapse .navbar-nav li {
+    min-width: 15%;
+    font-size: 1.5rem;
+}
+
+.navbar .container-fluid .navbar-collapse .navbar-nav a {
+    color: rgba(255, 255, 255, 0.925);
+    transition: 0.5s all;
+}
+
+.navbar .container-fluid .navbar-collapse .navbar-nav a:hover {
+    opacity: 0.5;
+}
+
+.navbar .container-fluid .navbar-collapse .navbar-nav .active a {
+    color: rgb(219, 77, 219);
+}
+
+.navbar .container-fluid .navbar-collapse .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.button1 {
+    color: black;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(137, 187, 243), rgb(245, 127, 245));
+}
+
+.button1:hover {
+    text-decoration: none;
+}
+
+.container {
+    height: 70vh;
+}
+
+.div1 {
+    position: relative;
+    height: 90vh;
+}
+
+.div1 .bg {
+    position: absolute;
+    top: 0;
+    right: -15%;
+    height: 100%;
+    width: 110%;
+    object-fit: contain;
+    z-index: -1;
+}
+
+.div1 .txtarea {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    height: 60%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.div1 .txtarea h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.div1 .txtarea p {
+    font-size: 1.7rem;
+    color: rgba(255, 255, 255, 0.685);
+}
+
+.div1 .txtarea a {
+    text-decoration: underline;
+    color: white;
+    font-size: 1.7rem;
+}
+
+.div1 .txtarea .button1 {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.div2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.div2 .txtarea {
+    height: 50%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.div2 .txtarea img {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: -20%;
+    transform: translateY(-50%);
+    height: 200%;
+    width: auto;
+    opacity: 0.2;
+}
+
+.div2 .txtarea h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.div2 .txtarea h2 {
+    color: rgba(255, 255, 255, 0.986);
+}
+
+.div2 .txtarea p {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.685);
+    margin: 5% 0;
+}
+
+.div2 .txtarea .button1 {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.div2 img {
+    width: 40%;
+}
+
+.div3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.div3 .txtarea {
+    height: 30%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+}
+
+.div3 .txtarea img {
+    position: absolute;
+    z-index: -1;
+    left: -30%;
+    top: -100%;
+    width: 120%;
+    object-fit: contain;
+    opacity: 0.5;
+}
+
+.div3 .txtarea h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.div3 .txtarea p {
+    font-size: 1.7rem;
+    color: rgba(255, 255, 255, 0.685);
+}
+
+.div3 img {
+    width: 60%;
+    padding: 10%;
+    object-fit: contain;
+}
+
+.div4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.div4 .txtarea {
+    height: 40%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.div4 .txtarea h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.div4 .txtarea h2 {
+    color: rgba(252, 176, 255, 0.863);
+    font-size: 2.5rem;
+}
+
+.div4 .txtarea p {
+    font-size: 1.7rem;
+    color: rgba(255, 255, 255, 0.767);
+    margin-top: 50px;
+}
+
+.div4 img {
+    width: 60%;
+    object-fit: contain;
+}
+
+.div5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.div5 .txtarea {
+    height: 20%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.div5 .txtarea img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 150px;
+    transform: rotate(135deg);
+    object-fit: contain;
+    opacity: 0.5;
+}
+
+.div5 .txtarea h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.div5 .txtarea p {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.767);
+    text-align: center;
+}
+
+.div5 img {
+    width: 90%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.div6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.div6 form {
+    height: 70%;
+    width: 80%;
+    border-radius: 30px;
+    box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.418);
+    background: rgb(12, 10, 12);
+    display: grid;
+    grid-template-columns: 5% 20% 50% 15%;
+    grid-template-rows: 5% 10% 45% 20% 5%;
+    gap: 3%;
+}
+
+.div6 form p {
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.952);
+    grid-column: 2;
+    grid-row: 3;
+    padding-top: 0.5rem;
+}
+
+.div6 form p:nth-child(1) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.div6 form .uname {
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(204, 204, 204);
+    grid-column: 3;
+    grid-row: 2;
+    font-size: 1.7rem;
+}
+
+.div6 form .uname::placeholder {
+    font-size: 1.7rem;
+    opacity: 0.5;
+}
+
+.div6 form .msg {
+    padding: 10px;
+    grid-column: 3;
+    grid-row: 3;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(204, 204, 204);
+    font-size: 1.7rem;
+}
+
+.div6 form .msg::placeholder {
+    font-size: 1.7rem;
+    opacity: 0.5;
+}
+
+.div6 form .button1 {
+    grid-column: 3;
+    grid-row: 4;
+    align-self: center;
+    justify-self: self-start;
+}
+
+.footer {
+    height: 45vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 35% 15% 15% 15% 10%;
+    grid-template-rows: 10% 20% 60% 10%;
+    color: rgba(255, 255, 255, 0.972);
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.212);
+    position: relative;
+}
+
+.footer img {
+    position: absolute;
+    z-index: -1;
+    top: -50%;
+    left: -30%;
+    width: 50%;
+    transform: rotate(180deg);
+    object-fit: contain;
+    opacity: 0.2;
+}
+
+.footer h2 {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.footer p {
+    grid-column: 2;
+    grid-row: 3;
+    align-self: flex-start;
+    font-size: 1.7rem;
+    padding-right: 20%;
+    opacity: 0.8;
+}
+
+.footer h4 {
+    grid-column: 3;
+    grid-row: 2;
+    font-weight: bold;
+}
+
+.footer h4:nth-child(5) {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.footer h4:nth-child(7) {
+    grid-column: 5;
+    grid-row: 2;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-top: 10px;
+    font-size: 1.7rem;
+}
+
+.footer ul li a {
+    color: rgba(255, 255, 255, 0.781);
+}
+
+.footer ul:nth-child(4) {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.footer ul:nth-child(6) {
+    grid-column: 4;
+    grid-row: 3;
+}
+
+.footer ul:nth-child(8) {
+    grid-column: 5;
+    grid-row: 3;
+}
+
+.copy {
+    width: 100%;
+    height: 5vh;
+    padding-top: 2vh;
+    padding-left: 10%;
+    border-top: 1px solid rgba(255, 255, 255, 0.219);
+    color: rgba(255, 255, 255, 0.555);
+    font-weight: lighter;
+}
+
+.star {
+    visibility: hidden;
+}
+
+.fadeIn {
+    -webkit-animation: animat_show 0.8s;
+    animation: animat_show 0.8s;
+    visibility: visible !important;
+}
+
+@keyframes animat_show {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+
+/*--------------------- mobile vertion -------------------------*/
+
+@media only screen and (max-width:800px) {
+    .navbar {
+        height: 10vh;
+    }
+    .navbar .container-fluid {
+        display: block;
+    }
+    .navbar .container-fluid .navbar-header .navbar-brand {
+        width: auto;
+    }
+    .navbar .container-fluid .navbar-collapse {
+        box-shadow: 0px 0 10px rgba(255, 255, 255, 0.144);
+        width: 100vw;
+        background: rgb(12, 9, 11);
+    }
+    .navbar .container-fluid .navbar-collapse .in {
+        height: 80vh;
+    }
+    .navbar .container-fluid .navbar-collapse .navbar-nav li {
+        width: 80%;
+        height: 50px;
+    }
+    .div1 {
+        height: 100vh;
+    }
+    .div1 .bg {
+        object-fit: contain;
+        object-position: right;
+    }
+    .div1 .txtarea {
+        top: 40%;
+        width: 90%;
+        height: 90vh;
+    }
+    .div2 {
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .div2 .txtarea {
+        height: 50%;
+        width: 100%;
+    }
+    .div2 .txtarea h1 {
+        font-size: 4.5rem;
+        font-weight: bold;
+        color: white;
+        margin: 0;
+    }
+    .div2 img {
+        height: 40%;
+        width: 100%;
+    }
+    .div3 {
+        flex-direction: column-reverse;
+    }
+    .div3 .txtarea {
+        height: 40%;
+        width: 100%;
+    }
+    .div3 .txtarea img {
+        position: absolute;
+        z-index: -1;
+        left: -30%;
+        top: -40%;
+        height: 100%;
+        object-fit: contain;
+        opacity: 0.5;
+    }
+    .div3 img {
+        height: 40%;
+        width: 100%;
+        padding: 0;
+    }
+    .div4 {
+        height: 150vh;
+        flex-direction: column;
+    }
+    .div4 .txtarea {
+        height: 40%;
+        width: 100%;
+    }
+    .div4 img {
+        height: 40%;
+        width: 100%;
+    }
+    .div5 {
+        height: 120vh;
+    }
+    .div5 .txtarea {
+        height: 40%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .div5 img {
+        width: 90%;
+        height: 40%;
+    }
+    .div6 form {
+        height: 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.212);
+    }
+    .div6 form p {
+        display: none;
+    }
+    .div6 form .uname {
+        height: 40px;
+        width: 90%;
+    }
+    .div6 form .uname::placeholder {
+        font-size: 1.5rem;
+        opacity: 0.5;
+    }
+    .div6 form .msg {
+        height: 60%;
+        width: 90%;
+    }
+    .div6 form .msg::placeholder {
+        font-size: 1.7rem;
+        opacity: 0.5;
+    }
+    .div6 form .button1 {
+        font-size: 1.2rem;
+    }
+    .footer {
+        min-height: 160vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer h2 {
+        margin-top: 30px;
+    }
+    .footer p {
+        padding: 0;
+        margin: 10px 0;
+    }
+    .footer h4 {
+        margin-top: 60px;
+    }
+    .footer h4:nth-child(5) {
+        grid-column: 4;
+        grid-row: 2;
+    }
+    .footer h4:nth-child(7) {
+        grid-column: 5;
+        grid-row: 2;
+    }
+    .footer ul {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        list-style: none;
+    }
+    .footer ul li {
+        margin-top: 10px;
+        font-size: 1.7rem;
+    }
+    .footer ul li a {
+        color: rgba(255, 255, 255, 0.781);
+    }
+    .footer ul:nth-child(4) {
+        grid-column: 3;
+        grid-row: 3;
+    }
+    .footer ul:nth-child(6) {
+        grid-column: 4;
+        grid-row: 3;
+    }
+    .footer ul:nth-child(8) {
+        grid-column: 5;
+        grid-row: 3;
+    }
+    .copy {
+        width: 100%;
+        height: 5vh;
+        padding-top: 2vh;
+        padding-left: 10%;
+        border-top: 1px solid rgba(255, 255, 255, 0.219);
+        color: rgba(255, 255, 255, 0.555);
+        font-weight: lighter;
+    }
+}
